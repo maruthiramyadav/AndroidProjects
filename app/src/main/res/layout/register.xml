@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorblue"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/registerback"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/whitearrow"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <com.devobal.ogabuzz.CircleImageView
+                        android:id="@+id/registerprofileimg"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        app:srcCompat="@drawable/userimage"/>
+                    <ImageView
+                        android:id="@+id/profileedit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_alignRight="@id/registerprofileimg"
+                        android:layout_alignBottom="@+id/registerprofileimg"
+                        app:srcCompat="@drawable/pencil_edit_button"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:text="User Name*"/>
+                <EditText
+                    android:id="@+id/edusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:hint="User Name"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorlightaccent"
+                    android:background="@drawable/rectanglebgedittext"/>
+
+                <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="8dp"
+                   android:textColor="@color/colorBlack"
+                   android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                   android:text="First Name*"/>
+                <EditText
+                    android:id="@+id/edfname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:hint="First Name"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorlightaccent"
+                    android:background="@drawable/rectanglebgedittext"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorBlack"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:text="Last Name*"/>
+                <EditText
+                    android:id="@+id/edlname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:hint="Last Name"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorlightaccent"
+                    android:background="@drawable/rectanglebgedittext"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorBlack"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:text="Email*"/>
+                <EditText
+                    android:id="@+id/edemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:hint="Email"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorlightaccent"
+                    android:background="@drawable/rectanglebgedittext"/>
+               <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorBlack"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:text="Date of Birth"/>
+                <TextView
+                    android:id="@+id/dobtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="6dp"
+                    android:drawablePadding="6dp"
+                    android:textColor="@color/colorBlack"
+                    android:background="@drawable/rectanglebgedittext"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:drawableRight="@drawable/bluecalendar"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorBlack"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:text="Birth Place"/>
+                <AutoCompleteTextView
+                    android:id="@+id/place_autocompletetv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectanglebgedittext"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorlightaccent"
+                    android:singleLine="true"
+                    android:hint="Enter a Location"/>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorBlack"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:text="Password*"/>
+                <EditText
+                    android:id="@+id/edpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:hint="Password"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorlightaccent"
+                    android:background="@drawable/rectanglebgedittext"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorBlack"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:text="Confirm Password*"/>
+                <EditText
+                    android:id="@+id/edconfpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:hint="Confirm Password"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorlightaccent"
+                    android:background="@drawable/rectanglebgedittext"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorBlack"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:text="Mobile Number*"/>
+                <EditText
+                    android:id="@+id/edmobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:hint="Mobile Number"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorlightaccent"
+                    android:background="@drawable/rectanglebgedittext"/>
+                <TextView
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/rectanglebg"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:textColor="@color/colorWhite"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:text="Regiser"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

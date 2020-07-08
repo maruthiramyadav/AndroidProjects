@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/itemview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/recauthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level Up Media"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="15dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/recnewsimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/article_list_img1"/>
+               <!-- <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                    android:id="@+id/recexoplayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"/>-->
+                <!--<fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+                    android:id="@+id/recexoplayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"/>-->
+
+                <ImageView
+                    android:id="@+id/recvideoimg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/play"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"/>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/images_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp" />
+
+
+
+                    <ImageView
+                        android:id="@+id/leftarrow"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/leftarrowlistingpic" />
+
+                    <ImageView
+                        android:id="@+id/rightarrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/rightarrowlistingpic" />
+                </RelativeLayout>
+                <!-- <android.support.v4.view.ViewPager
+                     android:id="@+id/pager"
+                     android:layout_width="match_parent"
+                     android:layout_height="180dp"
+                     android:longClickable="true"/>-->
+                <!-- <LinearLayout
+                     android:id="@+id/pagerLayout"
+                     android:layout_width="match_parent"
+                     android:visibility="gone"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+                     <android.support.v4.view.ViewPager
+                         android:id="@+id/viewpager"
+                         android:layout_width="match_parent"
+                         android:layout_height="130dp"
+                         android:layout_marginLeft="30dp"
+                         android:layout_marginRight="15dp"
+                         android:layout_above="@+id/layoutdots" />
+
+                     <LinearLayout
+                         android:id="@+id/layoutdots"
+                         android:layout_width="wrap_content"
+                         android:layout_height="@dimen/dots_height"
+                         android:layout_marginTop="-70dp"
+                         android:layout_marginLeft="40dp"
+                         android:gravity="center"
+                         android:orientation="horizontal" />
+                 </LinearLayout>-->
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/postcat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/relative1"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:alpha="0.5"
+                android:padding="5dp"
+                android:background="@color/colorBlack"/>
+            <!-- <LinearLayout
+                 android:id="@+id/testimonialLayout"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:layout_margin="5dp"
+                 android:orientation="vertical">
+                 <android.support.v4.view.ViewPager
+                     android:id="@+id/viewpager"
+                     android:layout_width="match_parent"
+                     android:layout_height="130dp"
+                     android:layout_above="@+id/layoutdots" />
+
+                 <LinearLayout
+                     android:id="@+id/layoutdots"
+                     android:layout_width="wrap_content"
+                     android:layout_height="30dp"
+                     android:gravity="bottom"
+                     android:orientation="horizontal" />
+             </LinearLayout>-->
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/mainlinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/recnewstitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Technology Lopem ipsum dolor sit amet,sapienetiam, nunc amet dolor ac odio mauris justo"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recshrtdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:text="Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</LinearLayout>

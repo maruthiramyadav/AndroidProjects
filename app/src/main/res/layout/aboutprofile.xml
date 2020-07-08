@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/colorblue">
+
+        <com.devobal.ogabuzz.CircleImageView
+            android:id="@+id/profileimg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/loading"/>
+
+         <ImageView
+             android:id="@+id/imgedit"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_marginTop="20dp"
+             android:layout_marginRight="20dp"
+             android:layout_alignRight="@+id/profileimg"
+             app:srcCompat="@drawable/pencilwhite"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/whitearrow"/>
+
+           <TextView
+               android:id="@+id/usrname"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:textColor="@color/colorWhite"
+               android:layout_marginBottom="24dp"
+               android:layout_centerInParent="true"
+               android:layout_alignBottom="@+id/profileimg"
+               android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+    
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginTop="10dp">
+           
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:layout_marginLeft="25dp"
+               android:layout_marginRight="25dp"
+               android:orientation="horizontal">
+               
+               <ImageView
+                   android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:layout_gravity="center"
+                   app:srcCompat="@drawable/userimage"/>
+
+               <TextView
+                   android:id="@+id/loggedfname"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_gravity="center"
+                   android:padding="8dp"
+                   android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                   android:text=""/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:layout_marginLeft="25dp"
+               android:layout_marginRight="25dp"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:layout_gravity="center"
+                   app:srcCompat="@drawable/userimage"/>
+
+               <TextView
+                   android:id="@+id/loggedlastname"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_gravity="center"
+                   android:padding="8dp"
+                   android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                   android:text=""/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:layout_marginLeft="25dp"
+               android:layout_marginRight="25dp"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:layout_gravity="center"
+                   app:srcCompat="@drawable/envelope"/>
+
+               <TextView
+                   android:id="@+id/loggedemail"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_gravity="center"
+                   android:padding="8dp"
+                   android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                   android:text=""/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:visibility="gone"
+               android:layout_marginLeft="25dp"
+               android:layout_marginRight="25dp"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:layout_gravity="center"
+                   app:srcCompat="@drawable/bluecalendar"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_gravity="center"
+                   android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                   android:text="Date of Birth"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:visibility="gone"
+               android:layout_marginLeft="25dp"
+               android:layout_marginRight="25dp"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:layout_gravity="center"
+                   app:srcCompat="@drawable/location"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_gravity="center"
+                   android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                   android:text="Birth Place"/>
+           </LinearLayout>
+
+
+       </LinearLayout>
+</LinearLayout>

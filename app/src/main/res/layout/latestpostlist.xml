@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorblue"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/postback"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/whitearrow"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latest Posts"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/postlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:divider="@null"
+        android:layout_margin="10dp"
+        android:dividerHeight="3dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_popup_layout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:alpha="0.9">
+
+        <TextView
+            android:id="@+id/optionfollow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Follow"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorlightwhite"/>
+
+        <TextView
+            android:id="@+id/optionshare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Share"
+            android:textColor="@color/colorWhite"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorlightwhite"/>
+
+        <TextView
+            android:id="@+id/optioncomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Give Comment for this Post"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

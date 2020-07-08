@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".OGAMainActivity"
+    tools:showIn="@layout/app_bar_ogamain">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tab_layout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/footerhomelayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/unselectedBackground"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/footerhome"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/home_white"/>
+
+            <TextView
+                android:id="@+id/hometext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp"
+                android:textColor="@color/colorwhitefix"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/foottrendvideolayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/unselectedBackground"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/trendvideo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/trendivdedio"/>
+
+            <TextView
+                android:id="@+id/trendtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trending Videos"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp"
+                android:textColor="@color/colorwhitefix"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footernewslayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/unselectedBackground"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/trendnews"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/tdnews"/>
+
+            <TextView
+                android:id="@+id/trendnewstext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trending News"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp"
+                android:textColor="@color/colorwhitefix"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notificationlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/unselectedBackground"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/notificationimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/notifications"/>
+
+            <TextView
+                android:id="@+id/notitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notifications"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp"
+                android:textColor="@color/colorwhitefix"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@color/colorlightwhite"
+            android:alpha="0.5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_popup_layout"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:alpha="0.9">
+
+            <TextView
+                android:id="@+id/followmoose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Follow"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorlightwhite"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Block MooseCraft"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorlightwhite"/>
+
+            <TextView
+                android:id="@+id/optionshare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:text="Share"
+                android:textColor="@color/colorWhite"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorlightwhite"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Give Feedback for this Post"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorlightwhite"/>
+
+            <TextView
+                android:id="@+id/optioncomment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Give Comment for this Post"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

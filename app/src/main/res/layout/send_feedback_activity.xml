@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorblue"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/feedback"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/whitearrow"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorwhitefix" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:text="If there is anything I can do for you to make your app experience better, I'll be glad to do so."
+                android:layout_marginBottom="2dp"/>
+
+
+            <EditText
+                android:id="@+id/edfeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="4"
+                android:paddingBottom="10dp"
+                android:layout_margin="8dp"
+                android:gravity="start"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:hint="Please write your concern here"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorlightaccent"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorlightaccent"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:text="/500" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:text="Concern In"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:id="@+id/concernspin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overlapAnchor="false"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_drop_down_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:text="Contact Information"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/edemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:layout_margin="8dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:hint="Your email addres"/>
+
+            <EditText
+                android:id="@+id/edphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:paddingBottom="10dp"
+                android:inputType="phone"
+                android:layout_margin="8dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:hint="Your phone number"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/feedbacksend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                    android:text="Send"
+                    android:paddingRight="35dp"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/colorwhitefix"
+                    android:background="@drawable/rectanglebg"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

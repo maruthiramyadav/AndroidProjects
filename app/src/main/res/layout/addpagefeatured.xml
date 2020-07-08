@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <com.devobal.ogabuzz.CircleImageView
+            android:id="@+id/cancel"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            app:srcCompat="@drawable/tech"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:layout_toRightOf="@+id/cancel"
+            android:layout_toLeftOf="@+id/checks"
+            android:text="For You"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:id="@+id/checks"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/addfill"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/plus_circle"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/addunfill"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/plus_circle_unfill"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

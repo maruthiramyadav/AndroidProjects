@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YoutubePlayerActivity"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="@color/colorAccent"
+       android:padding="5dp">
+
+      <ImageView
+          android:id="@+id/searchback"
+          android:layout_width="24dp"
+          android:layout_centerVertical="true"
+          android:layout_height="24dp"
+          android:layout_alignParentLeft="true"
+          app:srcCompat="@drawable/whitearrow"/>
+
+      <EditText
+          android:id="@+id/searchtext"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableRight="@drawable/search"
+          android:hint="Search News and Videos"
+          android:singleLine="true"
+          android:textColor="@color/colorWhite"
+          android:layout_toLeftOf="@+id/searchbtn"
+          android:layout_toRightOf="@+id/searchback"
+          android:layout_centerInParent="true"
+          android:textColorHint="@color/colorWhite"
+          android:focusableInTouchMode="true"
+          android:focusable="true"
+          android:layout_marginLeft="10dp"
+          android:padding="5dp"
+          android:drawablePadding="10dp"
+          android:textSize="12dp"
+          android:textCursorDrawable="@drawable/color_cursor"
+          android:background="@drawable/edittext_bottom_line"/>
+
+      <TextView
+          android:id="@+id/searchbtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Search"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="8dp"
+          android:layout_marginLeft="8dp"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:paddingTop="2dp"
+          android:paddingBottom="2dp"
+          android:textColor="@color/colorwhitefix"
+          android:background="@drawable/rectanglebg"/>
+
+   </RelativeLayout>
+
+   <ListView
+       android:id="@+id/rcView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+   </ListView>
+
+</LinearLayout>

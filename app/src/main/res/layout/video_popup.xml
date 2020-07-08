@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272626">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/photoselectheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:text="Take Video"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:text="Take from Library"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/youtube"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:text="Take from Youtube"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/photoscancel"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:text="Cancel"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:background="@color/colorGreen"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+</LinearLayout>
